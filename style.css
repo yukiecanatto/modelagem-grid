@@ -1,0 +1,39 @@
+.conteiner {
+    display: grid;
+    grid-template-areas: 
+      "header header"
+      "nav nav"
+      "main main"
+      "footer footer";
+
+      grid-template-columns: 1fr 3fr;
+      gap: 10px; /* Espaçamento entre os itens */
+
+}
+
+header {
+    grid-area: header;
+    background-color: seagreen;
+    height: 150px;
+  }
+  
+  nav {
+    grid-area: nav;
+    background-color: brown;
+    height: 50px;
+    
+  }
+  
+  main {
+    grid-area: main;
+    background-color: orange
+    
+
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: blueviolet;
+  }
+  
+  
