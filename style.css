@@ -1,39 +1,50 @@
 .conteiner {
-    display: grid;
-    grid-template-areas: 
+  display: grid;
+  grid-template-areas: 
       "header header"
       "nav nav"
       "main main"
       "footer footer";
-
-      grid-template-columns: 1fr 3fr;
-      gap: 10px; /* Espaçamento entre os itens */
+      
+  grid-template-columns: 1fr 3fr;
+  gap: 10px; /* Espaçamento entre os itens */
 
 }
 
-header {
-    grid-area: header;
-    background-color: seagreen;
-    height: 150px;
-  }
-  
-  nav {
-    grid-area: nav;
-    background-color: brown;
-    height: 50px;
-    
-  }
-  
-  main {
-    grid-area: main;
-    background-color: orange
-    
+.logo_image {
+  height: 200px;
+}
 
-  }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+  background-color: seagreen;
+  height: 150px;
+} 
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: nav;
+  background-color: brown;
+  height: 50px;
   
-  footer {
-    grid-area: footer;
-    background-color: blueviolet;
-  }
+}
+
+main {
+  display: flex;
+  grid-area: main;
+  background-color: orange
+  
+}
+
+footer {
+  display: flex;
+  grid-area: footer;
+  background-color: blueviolet;
+}
   
   
